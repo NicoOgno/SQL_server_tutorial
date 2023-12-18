@@ -1,1 +1,1 @@
-# SQL_server_tutorial
+# Microsoft Server SQL tutorial from cero
