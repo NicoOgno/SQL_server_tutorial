@@ -12,7 +12,7 @@
 
 2. In Solution Explorer right click at the top in `Solution` "your solution".
 
-3. Click Add *-->* New Project.
+3. Click Add ➡️ New Project.
 
 4. Select `SQL Server Scripts`, give a name for your project and click OK. This will create a project with three files: `Connections`, `Queries` and `Miscellaneous`.
 
@@ -22,13 +22,13 @@
 
 - A Solution may have 1 or more projects
 
-1. Go to File in the left top corner, click New *-->* Project.
+1. Go to File in the left top corner, click New ➡️ Project.
 
 2. Select **SQL Server Management Studio Solution** (`Blanck Solution`)
 
 3. Give a name for your solution and a path, and click OK.
 
-4. In **Solution Explorer** right click on Solution Add *-->* New Project.
+4. In **Solution Explorer** right click on Solution Add ➡️ New Project.
 
 5. Select `SQL Server Script`.
 
