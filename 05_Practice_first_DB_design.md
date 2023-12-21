@@ -118,39 +118,3 @@
 | 3 | Carlos Andrés Montoya | MEX | 15-05-1978 |
 | 5 | Juan Sanchez | MEX | 20-03-1992 |
 | 7 | Juan Sanchez | MEX | 16-07-1992 |
-
-<br><br>
-
-### $${\color{green}Create\space Database\space with\space TransactSQL}$$
-
-1. Open `🗒️New Query` window
-
-2. Type in window **CREATE DATABASE** *DatabaseName*
-
-3. In *Object Explorer* right click Databases ➡️ *Refresh*, and you'll see the new DB added ✨.
-
-<br><br>
-
-### $${\color{green}Create\space Table\space with\space TransactSQL}$$
-
-🔹 in `Query` window type:
-
-        CREATE TABLE Paciente1(
-          IdPaciente int NOT NULL,
-          Nombre varchar(50) NOT NULL,
-          Apellido varchar(50) NOT NULL,
-          FNacimiento date NULL,
-          Domicilio varchar(50) NULL,
-          IdPais char(3) NULL,
-          Telefono varchar(20) NULL,
-          Email varchar(30) NULL,
-          Observacion varchar(1000) NULL,
-          FechaAlta datetime NOT NULL,
-          CONSTRAINT PK_IdPaciente PRIMARY KEY (IdPaciente)
-        )
-
-> [!NOTE]
-> 📝
-> The reserved word *CONSTRAINT* is a condition, by convention PK_ is prefixed (PK_IdPaciente), and the reserved word *Primary Key* sets IdPaciente as the `PK` 🗝️.
-
-- Then Refresh `Databases` in *Object Explorer* go to the table and check it out with ➡️ *`Design`*
