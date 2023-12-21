@@ -15,8 +15,7 @@
 
 ## $${\color{green}NULL \space\space Value}$$
 
-|**NULL value**|
-|:------------|
+**NULL value**
 
 A **NULL** value represents the *absence of a value* in a column of a table. This indicates that no value has been assigned in that particular column.
 
@@ -26,8 +25,7 @@ A **NULL** value represents the *absence of a value* in a column of a table. Thi
 
 ## $${\color{green}Primary\space\space Key\space\space and\space\space Foreign\space\space Key}$$
 
-|**Primary Key**|
-|:------------|
+**Primary Key**
 
 A **Primary Key** is a concept in relational databases that refers to a field or set of fields in a table whose *values are unique for each row* in the table. The main function of a *Primary Key* is to provide a *unique way to identify each record in the table*.
 
@@ -43,9 +41,7 @@ A **Primary Key** is a concept in relational databases that refers to a field or
 
 <br><br>
 
-|**Foreign Key**|
-|:------------|
-
+**Foreign Key**
 
 - A **foreign key** refers to a field (or set of fields) in a database table that `references the Primary Key in another table`. Its main purpose is to establish a relationship between the two tables.
 
@@ -72,8 +68,7 @@ The primary objectives of database normalization include:
 
 <br>
 
-|**Normal Forms**|
-|----------------|
+**Normal Forms**
 
 ***First Normal Form (1NF):***
 A table is said to be in First Normal Form if and only `if all its fields (attributes) contain atomic values.` This means that each attribute of the table should have a unique value for an occurrence of the entity. Repeating groups are not allowed.
@@ -147,8 +142,7 @@ A table is in Third Normal Form if and only `if it is in 2NF, and non-key attrib
 
 ## $${\color{green}Data \space\space Types}$$
 
-|**Data Types**|
-|:------------|
+**Data Types**
 
 In SQL, a data type `refers to the type of values that can be stored` in a column of a table. Data types in SQL specify the kind of information each column can hold and also determine how that information is stored and manipulated.
 
