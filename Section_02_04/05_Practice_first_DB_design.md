@@ -1,4 +1,4 @@
-# $${\color{orange}First \space Database \space \ Design}$$
+# $${\color{orange}First \space Database \space Design}$$
 
 1.  Open **Microsoft SQL Server Manager**, in Object Explorer click on `Connect` 🔌 ➡️ `Database Engine`, and enter the password in the prompt. It will open some folders in the Object Explorer.
 
@@ -39,7 +39,7 @@
 
 ### $${\color{green}Defining\space a\space Table\space using\space the\space Table\space Designer}$$
 
-- In *Object Explorer* right click on Table ➡️ New.
+- In *Object Explorer* click Databases ➡️ 'YourDatabase', right click on Table ➡️ New.
 
 - In the table we give the `Column Name`, `Data Type` and set if `Nulls` are Allowed.
 
