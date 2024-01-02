@@ -77,3 +77,9 @@ and `▶ Execute`
 
       CONSTRAINT PK_MedicoEspecialidad PRIMARY KEY (IdMedico, IdEspecialidad)
     )
+
+<br><br>
+
+> [!TIP]
+> 🧠
+> *Running specific code* in a `Query Window` click over the code you want to execute, select it and press `F5`.
