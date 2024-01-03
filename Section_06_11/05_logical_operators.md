@@ -195,3 +195,7 @@ In SQL, you can *combine multiple operators*, such as `AND`, `OR`, `NOT`, `LIKE`
 > [!NOTE]
 > 📝
 > The parentheses `( )` are used to define the precedence of operations and help in grouping conditions together to ensure the query behaves as intended.
+
+> [!TIP]
+> 🧠
+> Use **`PRINT`** for depuration purposes.

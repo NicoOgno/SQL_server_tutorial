@@ -59,19 +59,24 @@ In `Transact-SQL (T-SQL)`, **`GO`** is a batch separator rather than a `Transact
 
 When a script contains multiple batches separated by `GO`, *each batch is executed separately*. This means that if you're defining multiple `stored procedures` or performing multiple tasks, using `GO` will ensure that *each subsequent block of code is treated as a separate unit and executed independently*.
 
-    CREATE PROCEDURE Procedure1 AS
-    -- SQL statements for Procedure1
-
+    -- First batch
+    CREATE TABLE ExampleTable (
+        ID INT PRIMARY KEY,
+        Name NVARCHAR(100)
+    )
     GO
 
-    CREATE PROCEDURE Procedure2 AS
-    -- SQL statements for Procedure2
+    -- Second batch
+    INSERT INTO ExampleTable VALUES (1, 'Ejemplo 1')
+    INSERT INTO ExampleTable VALUES (2, 'Ejemplo 2')
+    GO
 
-In this example, `GO` separates the creation of `Procedure1` from `Procedure2`. If you execute this script in `SQL Server Management Studio`, *each `CREATE PROCEDURE` statement will be treated as a separate batch and executed accordingly*.
+In this example, the table creation commands will be executed as one batch, and subsequently, the insertion commands will be executed as another separate batch.
 
 > [!NOTE]
 > 📝
-> `GO` **is not a SQL statement;** rather, *it's a directive recognized by `SQL Server Management Studio` and some other SQL tools to define batch boundaries*. It's often used for administrative purposes, script separation, or when you need to execute different parts of a script independently.
+> `GO` **is not a SQL statement;** rather, *it's a directive recognized by `SQL Server Management Studio` and some other SQL tools to define batch boundaries*. It's often used for administrative purposes, script separation, or when you need to execute different parts of a script independently. Furthermore,
+the `GO keyword` forces the code to keep running even if the code above throws an error.
 
 > [!IMPORTANT]
 > 🚩
