@@ -24,7 +24,7 @@ Remember that the exact syntax can vary depending on the `SQL database system` y
 
 > [!TIP]
 > 🧠
-> Use `command T` to see text types as results, for example using print in `T-SQL`.
+> Use `CTRL + T` to see text types as results, for example using `PRINT` in `T-SQL`.
 
 The `IF statement` only runs the next line of code if it's `TRUE`, you must specify wich part of the code you want to run for the `IF statement` using `BEGIN END`.
 
