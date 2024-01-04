@@ -100,3 +100,12 @@ YYYY-MM-DD hh:mm:ss
 01/01/1900 To 06/06/2079
 00:00:00 To 23:59:59
 </center>
+
+<br>
+
+> [!TIP]
+> 🧠
+> You may `SET` a `SMALLDATETIME` as follows:
+> `DECLARE @newDate = SMALLDATETIME`
+> `SET @newDate = '20240119 14:30:20`
+> If you don't put a specific hour (14:30:20) SQL will put 12:00 as default.

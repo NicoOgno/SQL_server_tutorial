@@ -97,3 +97,9 @@ Remember, the **scope of variables is limited to the script or the batch where t
     SET @moneda = NULL
 
     SELECT ISNULL(@moneda, 0.00) AS Valor
+
+<br><br>
+
+> [!NOTE]
+> 📝
+> Still lack of system variables, example: `@@IDENTITY`.

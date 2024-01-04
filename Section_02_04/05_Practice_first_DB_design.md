@@ -63,7 +63,7 @@
 
 > [!IMPORTANT]
 > 🚩
-> To allow permission to modify Tables go to the *`Tools`* menu ➡️ ⚙️ options ➡️ *`Designers`* ➡️ *`Table and Database Designers`*, uncheck 🔲 `Prevent saving changes that require table re-creation`. Then give 🆗 and save the Table 💾.
+> To allow permission to modify Tables go to the *`Tools`* menu ➡️ ⚙️ Options ➡️ *`Designers`* ➡️ *`Table and Database Designers`*, uncheck 🔲 `Prevent saving changes that require table re-creation`. Then give 🆗 and save the Table 💾.
 
 <br><br>
 

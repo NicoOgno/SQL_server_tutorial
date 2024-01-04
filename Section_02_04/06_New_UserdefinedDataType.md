@@ -19,7 +19,9 @@ In **Object Explorer** got to your DB ➡️ `Programmability` ➡️ `Types` an
 * After you define a `Data Type` you can go to your tables in your DB and assign that Data Type to the Data Type in the respective column.
 
 <br>
+
 <center>
 
 ![defuserDT](/images/defuserDT.png)
+
 </center>

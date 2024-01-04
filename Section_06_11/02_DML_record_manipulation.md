@@ -1,6 +1,6 @@
 # $${\color{orange}DML\space Record\space Manipulation}$$
 
-* **Create a Record:** right click on the table you want to insert a record then ▶️ *`Edit Top 200 Rows`*. After making a change in the table a red symbol will appear 🛑 that's because you have to commit your changes, to commit just press *Enter* or *Down Arrow/Up*.
+* **Create a Record:** right click on the table you want to insert a record then ➡️ *`Edit Top 200 Rows`*. After making a change in the table a red symbol will appear 🛑 that's because you have to commit your changes, to commit just press *Enter* or *Down Arrow/Up*.
 
 * **Delete a Record:** in the window of *`Edit Top 200 Rows`* `right click` on the record you want to delete and click `Delete`.
 
@@ -8,7 +8,7 @@
 
 > [!TIP]
 > 🧠
-> Right click on a table ▶️ `Select Top 1000 Rows`, it brings the first 1000 records from the table, and the script to make it in the `Query Window`.
+> Right click on a table ➡️ `Select Top 1000 Rows`, it brings the first 1000 records from the table, and the script to make it in the `Query Window`.
 
 <br><br>
 
