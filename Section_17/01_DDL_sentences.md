@@ -164,3 +164,137 @@ When `IGNORE_DUP_KEY` is set to `ON`,* any duplicate key values encountered duri
 > [!IMPORTANT]
 > 🚩
 > By default, SQL Server uses a combination of **row-level locks** and **page-level locks** based on its internal algorithms. It's important to note that the SQL Server query optimizer might override the setting based on its own assessment of the workload and performance considerations.
+
+<br><br>
+
+### ALTER TABLE ADD FOREIGN KEY
+
+`ALTER TABLE` statement is used to modify an existing table, and you can use it to add a foreign key constraint to a table.
+
+    ALTER TABLE child_table
+    ADD CONSTRAINT fk_constraint_name
+    FOREIGN KEY (child_column)
+    REFERENCES parent_table(parent_column);
+
+- **child_table:** This is the `table` that will have the `foreign key`.
+- **fk_constraint_name:** This is the name you give to the `foreign key constraint`.
+- **child_column:** This is the `column` in the child table that will be the `foreign key`.
+- **parent_table:** This is the `table` that the `foreign key` refers to.
+- **parent_column:** This is the `column` in the `parent table` that is being referenced by the `foreign key`.
+
+Here's a simple example:
+
+    -- Assume we have two tables: employees and departments
+    CREATE TABLE departments (
+        department_id INT PRIMARY KEY,
+        department_name VARCHAR(255)
+    );
+
+    CREATE TABLE employees (
+        employee_id INT PRIMARY KEY,
+        employee_name VARCHAR(255),
+        department_id INT,
+        FOREIGN KEY (department_id) REFERENCES departments(department_id)
+    );
+
+In this example, the `employees` table has a `foreign key` `department_id` that references the `department_id` `column` in the `departments` `table`.
+
+<br><br>
+
+### CREATE FUNCTION
+
+Example:
+
+    CREATE FUNCTION your_function_name (parameter1 datatype1, parameter2 datatype2, ...)
+    RETURNS return_datatype
+    AS
+    BEGIN
+        -- SQL statements defining the function logic
+        -- You can use the parameters and perform operations here
+        
+        RETURN result;  -- Return the result based on your function logic
+    END;
+
+Here's a more concrete example:
+
+    -- Example: Create a simple function to calculate the square of a number
+    CREATE FUNCTION CalculateSquare (input_number INT)
+    RETURNS INT
+    AS
+    BEGIN
+        DECLARE result INT;
+        SET result = input_number * input_number;
+        RETURN result;
+    END;
+
+This example creates a function named `CalculateSquare` that takes an integer as input and returns the square of that integer.
+
+<br>
+
+    -- Example: Call the CalculateSquare function with an input value
+    SELECT dbo.CalculateSquare(5) AS Result;
+
+This will return a result set with a single `column` named `Result` containing the square of the input value (in this case, 25).
+
+<br>
+
+> [!WARNING]
+> 👁️
+> Remeber to add the `Database Schema name` to `SELECT` the function, in this case `dbo.`.
+
+<br>
+
+> [!NOTE]
+> 📝
+> A `Database Schema name` help us to group different objects in a `Database`. `Database Schema` is a collection of `database objects`, including `tables`, `views`, `indexes`, and other elements that *define the structure of a database.*
+
+<br><br>
+
+### DROP TABLE
+
+`DROP TABLE` statement is used to remove an existing `table` and all its data from the database. It can also be use to remove a `Database`.
+
+    -- Drop a table named 'your_table_name'
+    DROP TABLE your_table_name;
+
+<br>
+
+> [!WARNING]
+> 👁️
+> Make sure to use this statement with caution, as it permanently removes the *table and its data*. If the `table` contains valuable information, be sure to have a *backup before executing the DROP TABLE statement*.
+
+<br>
+
+    -- Drop the table only if it exists
+    DROP TABLE IF EXISTS your_table_name;
+
+This will prevent an `error` from occurring if the `table` does not exist.
+
+<br>
+
+**DROP COLUMN:**
+
+    -- Drop a column named 'your_column_name' from the table 'your_table_name'
+    ALTER TABLE your_table_name
+    DROP COLUMN your_column_name;
+
+If you want to *drop multiple columns* in a single statement, you can list them after the `DROP COLUMN clause`:
+
+    -- Drop multiple columns from the table 'your_table_name'
+    ALTER TABLE your_table_name
+    DROP COLUMN column1, DROP COLUMN column2, ...;
+
+<br><br>
+
+### TRUNCATE
+
+`TRUNCATE TABLE statement` is used to remove all `rows` from a `table`, effectively resetting the table to an empty state. Unlike the `DELETE statement`, which removes `rows` one by one and can be rolled back, `TRUNCATE TABLE` is a more efficient operation for large tables, and **it cannot be rolled back**.
+
+    -- Truncate the table 'your_table_name'
+    TRUNCATE TABLE your_table_name;
+
+<br>
+
+> [!NOTE]
+> 📝
+> When you use `TRUNCATE TABLE`, it removes all the `rows` from the table but retains the table structure and any associated constraints (`indexes`, `triggers`, etc.). 
