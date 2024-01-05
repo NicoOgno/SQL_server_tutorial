@@ -193,3 +193,9 @@ In the first query with `UNION`, if an `EmployeeID` exists in both the `Employee
 > [!NOTE]
 > 📝
 > Keep in mind that `UNION` may have a slight performance overhead as it needs to perform additional processing to eliminate duplicates.
+
+<br>
+
+> [!IMPORTANT]
+> 🚩
+> If you use more than one `JOIN` in a `batch` be sure to respect the order declaration of `Aliases`.
