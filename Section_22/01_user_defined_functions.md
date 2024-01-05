@@ -2,7 +2,10 @@
 
 ### user-defined functions
 
-`User-defined functions` (UDFs) allow you to encapsulate a set of `T-SQL statements` to perform a specific task and reuse that logic throughout your `SQL queries`. There are *three types of user-defined functions* in `SQL Server`:
+- `User-defined functions` (UDFs) allow you to encapsulate a set of `T-SQL statements` to perform a specific task and reuse that logic throughout your `SQL queries`.
+
+- You can see this functions in the `Programmability` folder of your `Database`. *`Programmability`* ➡️ *`Functions`* 
+- There are *three types of user-defined functions* in `SQL Server`:
 
 <br>
 
